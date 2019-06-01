@@ -30,14 +30,14 @@
       <div class="container">
         <div class="row">
           <!-- <div class="col-md-3 text-center col-sm-4"  ng-repeat="x in Pok | orderBy : 'id'" ng-if="x.data != undefined "> -->
-          <div class="col-md-3 text-center col-sm-4">
+          <div class="col-md-3 text-center col-sm-4" ng-repeat="P in Lista">
             <div class="divInfo">
               <!-- Pokemon Picture -->
               <!-- <img class="pokePicture" src="{{x.sprites.front_default}}" alt="Poke"> -->
-              <img class="pokePicture" src="https://assets.pokemon.com/assets/cms2/img/pokedex/full/025.png" alt="Poke">
+              <img class="pokePicture" src="{{P.data.sprites.front_default}}">
             </div>
             <!-- <div class="pokeName">{{x.data.name}}</div> -->
-            <div class="pokeName">Nombre del Pokemon</div>
+            <div class="pokeName">{{P.data.name}}</div>
           </div>
         </div>
       </div>
